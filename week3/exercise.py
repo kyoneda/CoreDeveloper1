@@ -9,7 +9,31 @@
 # -----FIZZBUZZ CODE HERE-----
 
 
-# -----END FIZBUZZ CODE-----
+def print_fizzbuzz(last_number):
+    """Print FIZZBUZZ outputs from 1 to the specified number.
+
+    Take a number as an input and print FIZZBUZZ outputs from 1 to the number.
+    
+    Args:
+        last_number (int): A last number of FIZZBUZZ inputs.
+    """
+    for number in range(1, last_number + 1):
+        if number % 3 == 0 and number % 5 == 0:
+            print("FIZZBUZZ")
+        if number % 3 == 0:
+            print("FIZZ")
+        if number % 5 == 0:
+            print("BUZZ")
+        else:
+            print(number)
+
+
+if __name__ == "__main__":
+    print("Enter the last number for FIZZBUZZ game")
+    last_number = int(input())
+    print_fizzbuzz(last_number)
+
+# -----END FIZZBUZZ CODE-----
 
 # EXERCISE 2:
 
